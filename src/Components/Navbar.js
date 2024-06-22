@@ -62,7 +62,7 @@ const Navbar = () => {
                             </ul> */}
                         </div>
                         <div className="relative">
-                            <div className="cursor-pointer">Contact</div>
+                        <Link to="/WhyUs" className="cursor-pointer hover:underline">Why Us</Link>
                             {/* <ul className="absolute hidden bg-white text-black p-2 mt-2">
                                 <li>Contact 1</li>
                                 <li>Contact 2</li>
