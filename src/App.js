@@ -1,19 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from './my_components/Header';
-import {Routes,Route} from 'react-router-dom';
-import Pricing from './pages/Pricing';
-import Layout from './Layout';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './Components/Navbar';
+import Home from './Pages/Home';
+import Goal from './Pages/Goal';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
+    <>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Layout/>}/>
-        <Route path="/pricing" element={<Pricing/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/goal" element={<Goal />} />
+        {/* <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} /> */}
       </Routes>
-    </div>
+    </>
   );
 }
 
