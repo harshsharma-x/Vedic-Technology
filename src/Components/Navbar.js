@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import {motion} from 'framer-motion'
+
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,11 +32,11 @@ const Navbar = () => {
                         )}
                     </button>
                 </div>
-                <div className={`flex-col md:flex md:flex-row md:gap-20 ${isMenuOpen ? 'flex' : 'hidden'} absolute md:relative top-16 md:top-0 left-0 w-full md:w-auto bg-pink-100 md:bg-transparent z-10 `}>
+                <div className={`flex-col md:flex md:flex-row md:gap-20 ${isMenuOpen ? 'flex' : 'hidden'} absolute md:relative top-16 md:top-0 left-0 h-70 w-full md:w-auto bg-pink-100 md:bg-transparent z-10 `}>
                     <ul className="flex flex-col md:flex-row md:gap-5 mt-2 md:mt-0 font-semibold text-lg items-center">
                         <div className="relative items-center">
-                            <div className="cursor-pointer">Services</div>
-                            <ul className="absolute bg-white text-black text-md p-2 mt-2 w-72 border-2 rounded-lg cursor-pointer">
+                            <Link to="/Services" className="cursor-pointer">Services</Link>
+                            {/* <ul className="absolute bg-white text-black text-md p-2 mt-2 w-72 border-2 rounded-lg cursor-pointer">
                                 <li className="flex gap-2 items-center cursor-pointer">
                                     <i className="fa-solid fa-code"></i>
                                     <span className="hover:underline">Web Development</span>
@@ -51,7 +53,7 @@ const Navbar = () => {
                                     <i className="fa-solid fa-palette ml-1"></i>
                                     <span className="hover:underline">UI/UX Design</span>
                                 </li>
-                            </ul>
+                            </ul> */}
                         </div>
                         <div className="relative">
                             <div className="cursor-pointer">Works</div>
@@ -62,7 +64,7 @@ const Navbar = () => {
                             </ul> */}
                         </div>
                         <div className="relative">
-                            <div className="cursor-pointer">Contact</div>
+                        <Link to="/WhyUs" className="cursor-pointer hover:underline">Why Us</Link>
                             {/* <ul className="absolute hidden bg-white text-black p-2 mt-2">
                                 <li>Contact 1</li>
                                 <li>Contact 2</li>

@@ -1,7 +1,6 @@
 // src/components/Home.js
 import React from 'react';
 import { motion } from 'framer-motion';
-import Home2 from './Home2'
 
 const services = [
   {
@@ -24,14 +23,14 @@ const services = [
 const Home = () => {
   return (
     <div>     
-      <section className="bg-blue-600 text-white min-h-screen flex flex-col items-center justify-center p-8">
+      <section className="bg-gradient-to-r z--100 from-green-100 to-pink-200 min-h-screen text-white flex flex-col items-center justify-center p-8">
         <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold mb-4">Welcome to Vedic Technologies</h1>
-          <p className="text-xl mb-8">Innovative solutions for your business needs</p>
-          <a href="#services" className="bg-white text-blue-600 px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-200">Welcome</a>
+          {/* <h1 className="text-5xl font-bold mb-4">Welcome to Vedic Technologies</h1> */}
+          <p className="text-3xl text-slate-600 mb-8">Innovative solutions for your business needs</p>
+          {/* <a href="#services" className="bg-white text-blue-600 px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-200">Welcome</a> */}
         </div>
         <div id="services" className="w-full">
-          <h2 className="text-3xl font-bold text-center mb-8">Our Services</h2>
+          <h2 className="text-3xl text-slate-600 font-bold text-center mb-8">Our Services</h2>
           <div className="flex flex-wrap justify-center gap-8">
             {services.map((service, index) => (
               <motion.div
