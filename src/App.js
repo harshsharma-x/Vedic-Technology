@@ -5,6 +5,10 @@ import Home from './Pages/Landing';
 import Goal from './Pages/Goal';
 import WhyUs from './Pages/WhyUs';
 import Services from './Pages/Services';
+import WebDev from './Pages/WebDev';
+import MobileApp from './Pages/MobApp';
+import Contact from './Components/LetsTalk'
+import Pricing from './Components/PricingPage'
 
 function App() {
   return (
@@ -14,7 +18,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/goal" element={<Goal />} />
+        <Route path="/webdev" element={<WebDev />} />
+        <Route path="/mobileapp" element={<MobileApp />} />
         <Route path="/WhyUs" element={<WhyUs />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/Pricing" element={<Pricing />} />
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
     </>

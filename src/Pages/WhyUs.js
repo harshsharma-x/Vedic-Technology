@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 
 const WhyUS = () => {
   return (
-    <div className="bg-gradient-to-r flex from-blue-100 via-slate-50 to-pink-200 pt-[55px] pr-[0px] pb-[60px] pl-[0px] relative">
+
+    <div className="bg-gradient-to-r flex from-blue-100 via-slate-50 z--10 to-pink-200 pt-[55px] pr-[0px] pb-[60px] pl-[0px]">
       <div className="w-[100%] px-[12px] mx-auto">
         <div className="flex items-center justify-center flex-wrap mt-1 mx-4 lg:mx-15 p-4 lg:px-20">
           <div className="flex flex-col lg:flex-row mt-16">
