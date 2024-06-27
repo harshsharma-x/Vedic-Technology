@@ -5,9 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
-        colors: {
-          'custom-dark': '#232323',
-        },
+        sanspro: [  'Source Sans 3', 'sans-serif']
       },
     },
         

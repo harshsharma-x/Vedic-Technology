@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
+import Logo from '../Designs/3 copy.png'
+
 
 
 const Navbar = () => {
@@ -11,14 +13,18 @@ const Navbar = () => {
     };
 
     return (
-        <div className="flex">
-            <div className="h-16 w-full border-2 flex items-center bg-pink-100 justify-between px-4 md:px-8">
+      <div className='fixed w-full'>
+          <div className="flex justify-center  bg-pink-100  md:px-8 ">
+            <div className="h-16 w-[80%] border-2 flex items-center justify-between px-4">
                 <div className="w-28">
-                    <Link to="/" className="cursor-pointer "><span className="flex flex-col items-center justify-center text-xl font-medium cursor-pointer">
+                    <Link to="/" className="cursor-pointer ">
+                        <img className='text-black' src={Logo} alt="" />
+                        {/* <span className="flex flex-col items-center justify-center text-xl font-medium cursor-pointer">
                         Vedic <br /> <div className='text-sm'>
                         Technologies
                         </div>
-                    </span></Link>
+                    </span> */}
+                    </Link>
                 </div>
                 <div className="md:hidden">
                     <button
@@ -64,7 +70,7 @@ const Navbar = () => {
                             </ul> */}
                         </div>
                         <div className="relative">
-                        <Link to="/WhyUs" className="cursor-pointer hover:underline">Why Us</Link>
+                            <Link to="/WhyUs" className="cursor-pointer hover:underline">Why Us</Link>
                             {/* <ul className="absolute hidden bg-white text-black p-2 mt-2">
                                 <li>Contact 1</li>
                                 <li>Contact 2</li>
@@ -72,8 +78,8 @@ const Navbar = () => {
                             </ul> */}
                         </div>
                         <div className="relative">
-                            <Link to="/Goal" className="cursor-pointer hover:underline">Goal</Link>
-                            
+                            <Link to="/Pricing" className="cursor-pointer hover:underline">Pricing</Link>
+
                         </div>
                         <div className="relative">
                             <div className="cursor-pointer">About Us</div>
@@ -85,13 +91,15 @@ const Navbar = () => {
                         </div>
                     </ul>
                     <div className="flex justify-center mt-2 md:mt-0 md:ml-4">
-                        <div className="contact-button flex h-10 w-28 text-white bg-black justify-center items-center text-center hover:text-black z-10 rounded-lg cursor-pointer">
+                        <Link to='/contact'> <div
+                            className="contact-button flex h-10 w-28 text-white bg-black justify-center items-center text-center hover:text-black z-10 rounded-lg cursor-pointer">
                             Contact Us
-                        </div>
+                        </div></Link>
                     </div>
                 </div>
             </div>
         </div>
+      </div>
     );
 };
 
