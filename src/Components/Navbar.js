@@ -43,10 +43,14 @@ const Navbar = () => {
                         
                         <div className="relative">
                             <div className="cursor-pointer">Works</div>
-                           
+                          
                         </div>
                         <div className="training">
                         <Link to="/training" className="cursor-pointer hover:underline">Training</Link>
+                           
+                        </div>
+                        <div className="training">
+                        <Link to="/cplusplus" className="cursor-pointer hover:underline">C++</Link>
                            
                         </div>
                         <div className="relative">
