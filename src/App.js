@@ -9,6 +9,7 @@ import WebDev from './Pages/WebDev';
 import MobileApp from './Pages/MobApp';
 import Contact from './Components/LetsTalk'
 import Pricing from './Components/PricingPage'
+import Training from './Pages/Training';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/WhyUs" element={<WhyUs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/Pricing" element={<Pricing />} />
+        <Route path="/training" element={<Training />} />
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
     </>
