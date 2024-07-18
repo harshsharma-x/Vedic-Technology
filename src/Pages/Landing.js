@@ -16,7 +16,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-r z--100 from-green-100 to-pink-200 min-h-screen flex flex-col md:flex-row gap-2 p-5">
+      <div className="bg-gradient-to-r z--100 from-green-100 to-pink-200 min-h-screen flex flex-col md:flex-row gap-2 p-5 z-0">
         <div className="md:w-1/2 flex justify-center items-center text-center md:text-left">
           <motion.div
             className="ml-4 md:ml-[15%] py-10 px-6 md:py-20 md:px-14"
@@ -47,7 +47,7 @@ const Home = () => {
         <div className="md:w-1/2 flex justify-center items-center text-center md:text-left">
           <div className="relative py-10 px-6 md:py-20 md:px-14">
             <motion.div
-              className="w-[300px] md:w-[400px] h-[300px] md:h-[450px] rounded-t-full border-4 border-white overflow-hidden"
+              className="w-[300px] md:w-[400px] h-[300px] md:h-[450px] rounded-t-full border-4 border-white overflow-hidden z--10 "
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1 }}
