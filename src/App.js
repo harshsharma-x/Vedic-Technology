@@ -7,10 +7,17 @@ import WhyUs from './Pages/WhyUs';
 import Services from './Pages/Services';
 import WebDev from './Pages/WebDev';
 import MobileApp from './Pages/MobApp';
+
 import Contact from './Components/LetsTalk';
 import Pricing from './Components/PricingPage';
 import Works from './Pages/Works';
 import Testworld from './Components/Works/Testworld';
+
+import Contact from './Components/LetsTalk'
+import Pricing from './Components/PricingPage'
+import Training from './Pages/Training';
+import CPlusPlus from './Pages/CPlusPlus';
+
 
 function App() {
   return (
@@ -25,8 +32,13 @@ function App() {
         <Route path="/WhyUs" element={<WhyUs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/Pricing" element={<Pricing />} />
+
         <Route path="/Works" element={<Works />} />
         <Route path="/Testworld" element={<Testworld />} />
+
+        <Route path="/training" element={<Training />} />
+        <Route path="/cplusplus" element={<CPlusPlus />} />
+
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
     </>

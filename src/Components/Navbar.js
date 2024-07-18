@@ -19,7 +19,7 @@ const Navbar = () => {
                 <div className="w-28 md:mr-5">
                     <Link to="/" className="cursor-pointer ">
                         <img className='text-black' src={Logo} alt="" />
-                      
+
                     </Link>
                 </div>
                 <div className="md:hidden">
@@ -40,14 +40,31 @@ const Navbar = () => {
                             <Link to="/Services" className="cursor-pointer">Services</Link>
                           
                         </div>
+                        
                         <div className="relative">
+
                             <Link to="/Works" className="cursor-pointer hover:underline">Works</Link>
 
                         </div>
                         <div className="relative">
                             <Link to="/WhyUs" className="cursor-pointer hover:underline">Why Us</Link>
                         
+
+                            <div className="cursor-pointer">Works</div>
+                          
                         </div>
+                        <div className="training">
+                        <Link to="/training" className="cursor-pointer hover:underline">Training</Link>
+                           
+                        </div>
+                        <div className="training">
+                        <Link to="/cplusplus" className="cursor-pointer hover:underline">C++</Link>
+                           
+                        </div>
+                        <div className="relative">
+                            <Link to="/WhyUs" className="cursor-pointer hover:underline">Why Us</Link>
+                           
+          </div>
                       
                         <div className="relative">
                             <Link to="/Pricing" className="cursor-pointer hover:underline">Pricing</Link>
