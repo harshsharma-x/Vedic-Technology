@@ -13,13 +13,13 @@ const Navbar = () => {
     };
 
     return (
-      <div className='fixed w-full'>
-          <div className="flex justify-center  bg-pink-100  md:px-8 ">
+      <div className='fixed w-full z-100'>
+          <div className="flex justify-center  bg-pink-100  md:px-8">
             <div className="h-16 w-[80%] border-2 flex items-center justify-between px-4">
-                <div className="w-28">
+                <div className="w-28 md:mr-5">
                     <Link to="/" className="cursor-pointer ">
                         <img className='text-black' src={Logo} alt="" />
-                       
+
                     </Link>
                 </div>
                 <div className="md:hidden">
@@ -42,6 +42,14 @@ const Navbar = () => {
                         </div>
                         
                         <div className="relative">
+
+                            <Link to="/Works" className="cursor-pointer hover:underline">Works</Link>
+
+                        </div>
+                        <div className="relative">
+                            <Link to="/WhyUs" className="cursor-pointer hover:underline">Why Us</Link>
+                        
+
                             <div className="cursor-pointer">Works</div>
                           
                         </div>
@@ -56,7 +64,8 @@ const Navbar = () => {
                         <div className="relative">
                             <Link to="/WhyUs" className="cursor-pointer hover:underline">Why Us</Link>
                            
-                        </div>
+          </div>
+                      
                         <div className="relative">
                             <Link to="/Pricing" className="cursor-pointer hover:underline">Pricing</Link>
 

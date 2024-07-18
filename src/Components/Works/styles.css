@@ -1,0 +1,12 @@
+@keyframes premiumDoodle {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .premium-doodle-background {
+    background: linear-gradient(270deg, #ff4e50, #f9d423);
+    background-size: 400% 400%;
+    animation: premiumDoodle 15s ease infinite;
+  }
+  
