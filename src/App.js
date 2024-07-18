@@ -7,14 +7,10 @@ import WhyUs from './Pages/WhyUs';
 import Services from './Pages/Services';
 import WebDev from './Pages/WebDev';
 import MobileApp from './Pages/MobApp';
-
 import Contact from './Components/LetsTalk';
 import Pricing from './Components/PricingPage';
 import Works from './Pages/Works';
 import Testworld from './Components/Works/Testworld';
-
-import Contact from './Components/LetsTalk'
-import Pricing from './Components/PricingPage'
 import Training from './Pages/Training';
 import CPlusPlus from './Pages/CPlusPlus';
 
