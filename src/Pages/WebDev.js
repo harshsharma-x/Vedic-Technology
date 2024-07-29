@@ -6,8 +6,8 @@ import Footer from '../Components/Footer'
 
 const AboutUs = () => {
   return (
-    <div className="text-slate-600">
-      <div className='container mx-auto p-6 bg-gradient-to-r z--100 from-green-100 to-pink-200 min-h-screen  flex flex-col items-center justify-center'>
+    <div className="text-slate-600 pt-16">
+      <div className='container mx-auto p-6 bg-gradient-to-r z--100 from-green-100 to-pink-200 min-h-screen  flex flex-col items-center justify-center '>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

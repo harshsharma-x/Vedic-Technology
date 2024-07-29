@@ -28,10 +28,10 @@ const Home = () => {
   return (
     <div>
       <section className="bg-gradient-to-r z--100 from-green-100 to-pink-200 min-h-screen text-white flex flex-col items-center justify-center p-8">
-        <div className="text-center mb-12 ">
+        <div className="text-center mb-12 mt-12">
           {/* <h1 className="text-5xl font-bold mb-4">Welcome to Vedic Technologies</h1> */}
           <motion.p
-            className="text-3xl text-slate-600 mb-8"
+            className="text-3xl text-slate-600 mb-8 z-0 "
             initial={{ x: '-100%', opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, ease: 'easeOut' }}

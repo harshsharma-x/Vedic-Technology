@@ -16,7 +16,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-r z--100 from-green-100 to-pink-200 min-h-screen flex flex-col md:flex-row gap-2 p-5 z-0">
+      <div className="bg-gradient-to-r z-100 from-green-100 to-pink-200 min-h-screen flex flex-col md:flex-row gap-2 p-5 z-0">
         <div className="md:w-1/2 flex justify-center items-center text-center md:text-left">
           <motion.div
             className="ml-4 md:ml-[15%] py-10 px-6 md:py-20 md:px-14"
