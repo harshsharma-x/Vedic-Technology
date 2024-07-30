@@ -36,7 +36,7 @@ const Home = () => {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, ease: 'easeOut' }}
           >
-            Innovative solutions for your business needs
+            Innovative solutions for your business needs ...
           </motion.p>
           {/* <a href="#services" className="bg-white text-blue-600 px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-200">Welcome</a> */}
         </div>
