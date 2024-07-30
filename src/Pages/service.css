@@ -1,0 +1,33 @@
+.card {
+
+    overflow: hidden;
+ }
+ .text-detail
+ {
+     transition: 0.3s all ease-in-out;  
+ }
+ 
+ .card:hover .text-detail
+ {
+     margin-top: 0;
+ }
+ 
+ .animated-button
+ {
+     transition: 0.3s all ease-in-out;
+ }
+ 
+ .card:hover .animated-button
+ {
+     margin-top: 30px;
+ }
+ .photo {
+     transition: 0.2s all ease-in-out;
+ 
+ }
+ 
+ .card:hover .photo
+ {
+    transform: scale(1.6) translateX(-10px); 
+    
+ }
