@@ -1,3 +1,46 @@
+import React from 'react';
+import { HiArrowNarrowRight } from "react-icons/hi";
+import Designs from '../Designs/Office.png';
+import { IoRemoveOutline } from "react-icons/io5";
+ import { FaArrowRight, FaWhatsapp } from "react-icons/fa";
+ import { motion } from "framer-motion";
+import Services from './Services';
+ import WhyUS from './WhyUs';
+ import Modal from 'react-modal';
+ import Goal from './Goal';
+ import Logo from '../Designs/Logo1.png';
+ import Footer from '../Components/Footer'
+ import Vedic from '../Components/wearevedic'
+ import Contact from '../Components/LetsTalk'
+
+const Homepeg = () => {
+    return (
+      <> 
+        <div className="h-screen w-screen  relative flex flex-col justify-center items-start bg-cover bg-center py-8 px-4 sm:py-16 sm:px-32 " style={{ backgroundImage: `url(${Designs})` }}>
+            <div className="p-4 sm:p-8 rounded-lg flex flex-col justify-start items-start w-full sm:w-[500px] max-w-full sm:max-w-none"> 
+                <div className="text-2xl text-white sm:text-4xl md:text-7xl font-bold">Implementing Software Solutions</div>
+                <div className="mt-2 sm:mt-4 text-base text-white sm:text-lg md:text-xl">Innovating Tomorrow's Solutions, Today. Company name – Your Trusted IT Partner</div>
+                <div className="mt-4 sm:mt-8 h-12 w-48 sm:w-48 bg-black bg-opacity-75 rounded-full flex justify-center items-center gap-4 text-white cursor-pointer">
+                    Let’s Get Started
+                    <HiArrowNarrowRight />
+                </div>
+            </div>
+        </div>
+
+ <Services />
+ <WhyUS />
+     <Goal /> 
+           <Vedic/>    
+              <Contact/>
+      <Footer/>
+        </>
+     
+
+    );
+};
+
+export default Homepeg;
+
 // import React, { useState } from "react";
 // import { IoRemoveOutline } from "react-icons/io5";
 // import { FaArrowRight, FaWhatsapp } from "react-icons/fa";
@@ -110,50 +153,4 @@
 // };
 
 // export default Home;
-
-
-
-
-import React from 'react';
-import { HiArrowNarrowRight } from "react-icons/hi";
-import Designs from '../Designs/Office.png';
-import { IoRemoveOutline } from "react-icons/io5";
- import { FaArrowRight, FaWhatsapp } from "react-icons/fa";
- import { motion } from "framer-motion";
-import Services from './Services';
- import WhyUS from './WhyUs';
- import Modal from 'react-modal';
- import Goal from './Goal';
- import Logo from '../Designs/Logo1.png';
- import Footer from '../Components/Footer'
- import Vedic from '../Components/wearevedic'
- import Contact from '../Components/LetsTalk'
-
-const Homepeg = () => {
-    return (
-      <> 
-        <div className="h-screen w-screen  relative flex flex-col justify-center items-start bg-cover bg-center py-8 px-4 sm:py-16 sm:px-32" style={{ backgroundImage: `url(${Designs})` }}>
-            <div className="p-4 sm:p-8 rounded-lg flex flex-col justify-start items-start w-full sm:w-[500px] max-w-full sm:max-w-none"> 
-                <div className="text-2xl text-white sm:text-4xl md:text-7xl font-bold">Implementing Software Solutions</div>
-                <div className="mt-2 sm:mt-4 text-base text-white sm:text-lg md:text-xl">Innovating Tomorrow's Solutions, Today. Company name – Your Trusted IT Partner</div>
-                <div className="mt-4 sm:mt-8 h-12 w-48 sm:w-48 bg-black bg-opacity-75 rounded-full flex justify-center items-center gap-4 text-white cursor-pointer">
-                    Let’s Get Started
-                    <HiArrowNarrowRight />
-                </div>
-            </div>
-        </div>
-
- <Services />
- <WhyUS />
-     <Goal /> 
-           <Vedic/>    
-              <Contact/>
-      <Footer/>
-        </>
-     
-
-    );
-};
-
-export default Homepeg;
 

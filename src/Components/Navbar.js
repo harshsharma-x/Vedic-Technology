@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion'
-import Logo from '../Designs/3 copy.png'
+import Logo from '../Designs/WhiteLogo.png'
 
 
 const Navbar = () => {
@@ -14,9 +14,9 @@ const Navbar = () => {
      console.log (isMenuOpen);
 
     return (
-      <div className='fixed w-full z-100 '>
-          <div className="flex justify-center  bg-pink-100  md:px-8">
-            <div className="h-16 w-[80%] border-2 flex items-center justify-between px-4">
+      <div className='fixed w-full z-50  text-white'>
+          <div className="flex justify-center  md:px-8">
+            <div className="h-16 w-[85%] flex items-center justify-between px-4">
                 <div className="w-28 md:mr-5">
                     <Link to="/" className="cursor-pointer ">
                         <img className='text-black' src={Logo} alt="" /> </Link>
@@ -54,14 +54,14 @@ const Navbar = () => {
                             
                           
                         </div>
-                        <div className="relative">
+                        {/* <div className="relative">
                         <Link to="/training" className="cursor-pointer hover:underline">Training</Link>
                            
-                        </div>
-                        <div className="relative">
+                        </div> */}
+                        {/* <div className="relative">
                         <Link to="/cplusplus" className="cursor-pointer hover:underline">C++</Link>
                            
-                        </div>
+                        </div> */}
                        
                         <div className="relative">
                             <Link to="/Pricing" className="cursor-pointer hover:underline">Pricing</Link>
@@ -105,14 +105,14 @@ const Navbar = () => {
                             
                           
                         </div>
-                        <div className="">
+                        {/* <div className="">
                         <Link to="/training" className="cursor-pointer hover:underline"onClick={toggleMenu}>Training</Link>
                            
-                        </div>
-                        <div className="">
+                        </div> */}
+                        {/* <div className="">
                         <Link to="/cplusplus" className="cursor-pointer hover:underline"onClick={toggleMenu}>C++</Link>
                            
-                        </div>
+                        </div> */}
                         
                       
                         <div className="">
