@@ -13,7 +13,7 @@ const Navbar = () => {
     };
 
     return (
-      <div className='fixed w-full z-100'>
+      <div className='fixed w-full z-50'>
           <div className="flex justify-center  bg-pink-100  md:px-8">
             <div className="h-16 w-[80%] border-2 flex items-center justify-between px-4">
                 <div className="w-28 md:mr-5">
