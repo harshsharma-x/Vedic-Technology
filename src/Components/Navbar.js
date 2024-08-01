@@ -54,10 +54,11 @@ const Navbar = () => {
                             
                           
                         </div>
-                        {/* <div className="relative">
+                        <div className="relative">
                         <Link to="/training" className="cursor-pointer hover:underline">Training</Link>
                            
-                        </div> */}
+                        </div>
+
                         {/* <div className="relative">
                         <Link to="/cplusplus" className="cursor-pointer hover:underline">C++</Link>
                            

@@ -15,19 +15,19 @@ const plans = [
     ],
     button: "Current Plan",
   },
-  {
-    name: "Standard Plan",
-    price: "$30",
-    features: [
-      "30h Fast generations",
-      "unlimited Relaxed generations",
-      "General commercial terms",
-      "Access to member gallery",
-      "Optional credit top ups",
-      "3 concurrent fast jobs",
-    ],
-    button: "Choose Plan",
-  },
+  // {
+  //   name: "Standard Plan",
+  //   price: "$30",
+  //   features: [
+  //     "30h Fast generations",
+  //     "unlimited Relaxed generations",
+  //     "General commercial terms",
+  //     "Access to member gallery",
+  //     "Optional credit top ups",
+  //     "3 concurrent fast jobs",
+  //   ],
+  //   button: "Choose Plan",
+  // },
   {
     name: "Pro Plan",
     price: "$60",
@@ -60,12 +60,12 @@ const plans = [
 
 const SubscriptionPage = () => {
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col items-center py-8">
+    <div className="min-h-screen bg-black flex flex-col items-center py-8">
       <h1 className="text-3xl font-bold mb-4">Purchase a subscription</h1>
       <p className="text-lg mb-8 font-semibold">Choose the plan that works for you.</p>
       <div className="flex justify-center mb-6 bg-gray-200 rounded-3xl">
-        <button className="mr-2 px-4 py-2 bg-black text-white rounded-3xl font-bold">Monthly</button>
-        <button className="px-4 py-2 bg-gray-300 text-gray-800 rounded-3xl">Yearly - 20% off</button>
+        {/* <button className="mr-2 px-4 py-2 bg-black text-white rounded-3xl font-bold">Monthly</button>
+        <button className="px-4 py-2 bg-gray-300 text-gray-800 rounded-3xl">Yearly - 20% off</button> */}
       </div>
       <div className="grid lg:grid-cols-4 gap-4 w-full max-w-6xl p-4 bg-gray-100 rounded-3xl">
         {plans.map((plan, index) => (
