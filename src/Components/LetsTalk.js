@@ -1,4 +1,5 @@
 import React from 'react';
+import Swal from 'sweetalert2'
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
@@ -18,8 +19,11 @@ const Contact = () => {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Form Submitted Successfully");
-      event.target.reset();
+      Swal.fire({
+        title: "Done",
+        text: "You Will Receive A Call From Our Team Shortly!",
+        icon: "success"
+      })
     } else {
       console.log("Error", data);
       setResult(data.message);
