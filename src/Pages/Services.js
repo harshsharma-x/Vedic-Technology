@@ -4,43 +4,16 @@ import './service.css'
 
 const Card = ({ title, description, tags, img, button }) => {
   return (
-
-    <div>
-      <section className="bg-gradient-to-r z--100 from-green-100 to-pink-200 min-h-screen text-white flex flex-col items-center justify-center p-8">
-        <div className="text-center mb-12 mt-12">
-          {/* <h1 className="text-5xl font-bold mb-4">Welcome to Vedic Technologies</h1> */}
-          <motion.p
-            className="text-3xl text-slate-600 mb-8 "
-            initial={{ x: '-100%', opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, ease: 'easeOut' }}
-            style={{opacity : -20}}
-          >
-            Innovative solutions for your business needs
-          </motion.p>
-          {/* <a href="#services" className="bg-white text-blue-600 px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-200">Welcome</a> */}
-        </div>
-        <div id="services" className="w-full">
-          <h2 className="text-3xl text-slate-600 font-bold text-center mb-8">Our Services</h2>
-          <div className="flex flex-wrap justify-center gap-8">
-            {services.map((service, index) => (
-              <motion.div
-                key={index}
-                className="max-w-sm bg-gray-100 p-6 rounded-lg shadow-md"
-                whileHover={{ scale: 1.05 }}
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
-              >
-
-                <Link to={service.url} className="">
-                <img src={service.imgSrc} alt={service.title} className="w-full h-48 object-cover rounded-t-lg mb-4" />
-                  <h3 className="text-xl font-semibold mb-2 text-black">{service.title}</h3>
-                  <p className='text-gray-500'>{service.description}</p></Link>
-              </motion.div>
-            ))}
-
-            
+    <div
+      whileHover={{ scale: 1.05 }}
+      className="card w-[49%] bg-gray-200 rounded-lg shadow-md p-6  h-[320px] flex flex-col cursor-pointer transition-transform duration-300 gap-2"
+    >
+      <div className='relative z-0 rounded-lg mt-14 text-detail'>
+        <h2 className="text-xl font-bold mb-2">{title}</h2>
+        <div className='flex gap-20'>
+          <div className="text-gray-700  flex w-96 mt-5">{description}</div>
+          <div>
+            <img className=" photo w-36  object-cover  rounded flex" src={img} alt={title} />
           </div>
         </div>
         <ul className="list-none p-0 flex flex-wrap gap-2">
