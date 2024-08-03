@@ -31,10 +31,11 @@ const Home = () => {
         <div className="text-center mb-12 mt-12">
           {/* <h1 className="text-5xl font-bold mb-4">Welcome to Vedic Technologies</h1> */}
           <motion.p
-            className="text-3xl text-slate-600 mb-8 z-0 "
+            className="text-3xl text-slate-600 mb-8 "
             initial={{ x: '-100%', opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, ease: 'easeOut' }}
+            style={{opacity : -20}}
           >
             Innovative solutions for your business needs
           </motion.p>
