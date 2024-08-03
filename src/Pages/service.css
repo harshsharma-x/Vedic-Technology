@@ -1,4 +1,4 @@
-.card {
+/* .card {
 
     overflow: hidden;
  }
@@ -30,4 +30,56 @@
  {
     transform: scale(1.6) translateX(-10px); 
     
+ } */
+
+ .card {
+    overflow: hidden;
+  }
+  
+  .text-detail {
+    transition: 0.3s all ease-in-out;
+  }
+  
+  .card:hover .text-detail {
+    margin-top: 0;
+  }
+  
+  .animated-button {
+    transition: 0.3s all ease-in-out;
+  }
+  
+  .card:hover .animated-button {
+    margin-top: 30px;
+  }
+  
+  .photo {
+    transition: 0.2s all ease-in-out;
+  }
+  
+  .card:hover .photo {
+    transform: scale(1.6) translateX(-10px);
+  }
+  
+  /* Media queries to disable hover effects on mobile screens */
+  @media (max-width: 768px) {
+    .card:hover .text-detail,
+    .card:hover .animated-button,
+    .card:hover .photo {
+      margin-top: unset;
+      transform: unset;
+    }
+  
+    .text-detail {
+      margin-top: unset;
+    }
+    .card:hover .animated-button {
+        margin-top: fixed;
+      }
+      .animated-button
+ {
+     transition: none all ease-in-out;
  }
+ .card {
+    overflow: hidden;
+  }
+  }
