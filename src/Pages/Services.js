@@ -2,6 +2,7 @@
 // import { motion } from 'framer-motion';
 // import './service.css'
 
+// <<<<<<< HEAD
 // const Card = ({ title, description, tags, img, button }) => {
 //   return (
 //     <div
@@ -21,8 +22,56 @@
 //             <li key={index} className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">{tag}</li>
 //           ))}
 //         </ul>
+// =======
+// const Card = ({ title, description, tags, img, button }) => {
+//   return (
 
-//         <button
+//     <div>
+//       <section className="bg-gradient-to-r z--100 from-green-100 to-pink-200 min-h-screen text-white flex flex-col items-center justify-center p-8">
+//         <div className="text-center mb-12 mt-12">
+//           {/* <h1 className="text-5xl font-bold mb-4">Welcome to Vedic Technologies</h1> */}
+//           <motion.p
+//             className="text-3xl text-slate-600 mb-8 "
+//             initial={{ x: '-100%', opacity: 0 }}
+//             animate={{ x: 0, opacity: 1 }}
+//             transition={{ duration: 1, ease: 'easeOut' }}
+//             style={{opacity : -20}}
+//           >
+//             Innovative solutions for your business needs
+//           </motion.p>
+//           {/* <a href="#services" className="bg-white text-blue-600 px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-200">Welcome</a> */}
+//         </div>
+//         <div id="services" className="w-full">
+//           <h2 className="text-3xl text-slate-600 font-bold text-center mb-8">Our Services</h2>
+//           <div className="flex flex-wrap justify-center gap-8">
+//             {services.map((service, index) => (
+//               <motion.div
+//                 key={index}
+//                 className="max-w-sm bg-gray-100 p-6 rounded-lg shadow-md"
+//                 whileHover={{ scale: 1.05 }}
+//                 initial={{ opacity: 0, y: 50 }}
+//                 animate={{ opacity: 1, y: 0 }}
+//                 transition={{ duration: 0.5, delay: index * 0.2 }}
+//               >
+
+//                 <Link to={service.url} className="">
+//                 <img src={service.imgSrc} alt={service.title} className="w-full h-48 object-cover rounded-t-lg mb-4" />
+//                   <h3 className="text-xl font-semibold mb-2 text-black">{service.title}</h3>
+//                   <p className='text-gray-500'>{service.description}</p></Link>
+//               </motion.div>
+//             ))}
+
+            
+//           </div>
+//         </div>
+//         <ul className="list-none p-0 flex flex-wrap gap-2">
+//           {tags.map((tag, index) => (
+//             <li key={index} className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">{tag}</li>
+//           ))}
+//         </ul>
+// >>>>>>> c18bcec99620bdac168ff736630c151445050fe1
+
+// //         <button
 //           whileHover={{ scale: 1.1 }}
 //           whileTap={{ scale: 0.95 }}
 //           className=" animated-button mt-32 bg-black text-white py-1 px-2 rounded  "
