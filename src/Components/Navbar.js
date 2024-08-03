@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+
 import { motion } from 'framer-motion';
 import Logo from '../Designs/3 copy.png';
 import logo1 from '../Designs/Logo1.png';
@@ -31,6 +32,7 @@ const Navbar = () => {
     };
 
     return (
+
         <div className="fixed w-full z-50">
             <div className={`flex justify-center ${isMenuOpen ? 'bg-black text-white' : 'md:bg-pink-100'} md:px-8`}>
                 <div className="h-16 w-[80%] flex items-center justify-between px-4">
@@ -81,6 +83,7 @@ const Navbar = () => {
                                     Contact Us
                                 </div>
                             </Link>
+
                         </div>
                     </div>
                 </div>
@@ -123,10 +126,12 @@ const Navbar = () => {
                                 </div>
                             </Link>
                         </div>
+
                     </div>
                 ) : null}
             </motion.div>
         </div>
+
     );
 };
 

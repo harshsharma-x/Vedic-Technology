@@ -1,155 +1,145 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
+import { gsap } from 'gsap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLaptopCode, faProjectDiagram, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import Footer from '../Components/Footer'
 
-const Training = () => {
+const HomePage = () => {
+  const heroRef = useRef(null);
+
+  // useEffect(() => {
+  //   gsap.from(heroRef.current, { opacity: 0, y: -50, duration: 1 });
+  // }, []);
+
   return (
-    <section id="training" className="pt-40 bg-white ">
-      <div className="container mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-8">Two-Year Training Program</h2>
-        
-        {/* Year 1 */}
-        <div className="bg-gray-100 p-6 rounded-lg shadow-lg mb-8">
-          <h3 className="text-2xl font-bold mb-4">Year 1: Foundations and Frontend Development</h3>
-          
-          {/* Month 1-2 */}
-          <div className="mb-6">
-            <h4 className="text-xl font-bold mb-2">Month 1-2: Foundations of Web Development</h4>
-            <ul className="list-disc list-inside">
-              <li>HTML5 and CSS3 basics</li>
-              <li>Responsive design with Flexbox and Grid</li>
-              <li>SCSS/SASS and Tailwind CSS</li>
-              <li>JavaScript basics and ES6+ features</li>
-            </ul>
-          </div>
-          
-          {/* Month 3-4 */}
-          <div className="mb-6">
-            <h4 className="text-xl font-bold mb-2">Month 3-4: JavaScript Deep Dive</h4>
-            <ul className="list-disc list-inside">
-              <li>Advanced JavaScript concepts (asynchronous JS, Promises)</li>
-              <li>DOM manipulation</li>
-              <li>Fetch API and AJAX</li>
-              <li>JavaScript projects and exercises</li>
-            </ul>
-          </div>
-          
-          {/* Month 5-6 */}
-          <div className="mb-6">
-            <h4 className="text-xl font-bold mb-2">Month 5-6: React Basics</h4>
-            <ul className="list-disc list-inside">
-              <li>Introduction to React and JSX</li>
-              <li>Components, Props, and State</li>
-              <li>React lifecycle methods</li>
-              <li>React project implementation</li>
-            </ul>
-          </div>
-          
-          {/* Month 7-8 */}
-          <div className="mb-6">
-            <h4 className="text-xl font-bold mb-2">Month 7-8: Advanced React</h4>
-            <ul className="list-disc list-inside">
-              <li>React Hooks (useState, useEffect, useContext)</li>
-              <li>Context API and React Router</li>
-              <li>State management with Redux and Redux Toolkit</li>
-              <li>Performance optimization and testing with Jest and React Testing Library</li>
-            </ul>
-          </div>
-          
-          {/* Month 9-10 */}
-          <div className="mb-6">
-            <h4 className="text-xl font-bold mb-2">Month 9-10: TypeScript</h4>
-            <ul className="list-disc list-inside">
-              <li>TypeScript basics (type annotations, interfaces)</li>
-              <li>Advanced TypeScript concepts (generics, decorators)</li>
-              <li>Integrating TypeScript with React</li>
-              <li>TypeScript projects and exercises</li>
-            </ul>
-          </div>
-          
-          {/* Month 11-12 */}
-          <div className="mb-6">
-            <h4 className="text-xl font-bold mb-2">Month 11-12: Design and Prototyping with Figma</h4>
-            <ul className="list-disc list-inside">
-              <li>Introduction to Figma and basic tools</li>
-              <li>Creating components and design systems</li>
-              <li>Prototyping in Figma</li>
-              <li>Collaborative design projects</li>
-            </ul>
-          </div>
+    <div className="min-h-screen bg-gray-100 text-gray-800">
+      {/* Hero Section */}
+      <section className="bg-blue-700 text-white py-20">
+        <div className="container mx-auto text-center">
+          <h1 className="text-4xl font-bold mb-4">Kickstart Your Tech Career with Real Projects</h1>
+          <p className="text-lg mb-8">Hands-on training for new students with real-world projects and minimal fees.</p>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            className="px-8 py-4 bg-white text-blue-600 rounded shadow"
+          >
+            Join Now
+          </motion.button>
         </div>
-        
-        {/* Year 2 */}
-        <div className="bg-gray-100 p-6 rounded-lg shadow-lg mb-8">
-          <h3 className="text-2xl font-bold mb-4">Year 2: Backend Development, Fullstack Integration, and Advanced Topics</h3>
-          
-          {/* Month 1-2 */}
-          <div className="mb-6">
-            <h4 className="text-xl font-bold mb-2">Month 1-2: Backend Development with Node.js and Express</h4>
-            <ul className="list-disc list-inside">
-              <li>Introduction to Node.js and npm</li>
-              <li>Building and handling modules</li>
-              <li>Creating RESTful APIs with Express.js</li>
-              <li>Middleware and error handling</li>
-            </ul>
-          </div>
-          
-          {/* Month 3-4 */}
-          <div className="mb-6">
-            <h4 className="text-xl font-bold mb-2">Month 3-4: Database Management with MongoDB</h4>
-            <ul className="list-disc list-inside">
-              <li>Introduction to MongoDB and CRUD operations</li>
-              <li>Using Mongoose ORM</li>
-              <li>Aggregation framework and indexes</li>
-              <li>MongoDB projects and exercises</li>
-            </ul>
-          </div>
-          
-          {/* Month 5-6 */}
-          <div className="mb-6">
-            <h4 className="text-xl font-bold mb-2">Month 5-6: Fullstack Development</h4>
-            <ul className="list-disc list-inside">
-              <li>Integrating frontend with backend</li>
-              <li>Building a fullstack project (React + Node.js + MongoDB)</li>
-              <li>Deploying applications to AWS (EC2, S3)</li>
-              <li>Serverless architecture with AWS Lambda</li>
-            </ul>
-          </div>
-          
-          {/* Month 7-8 */}
-          <div className="mb-6">
-            <h4 className="text-xl font-bold mb-2">Month 7-8: Unit Testing and DevOps</h4>
-            <ul className="list-disc list-inside">
-              <li>Unit testing with Jest</li>
-              <li>Integration testing and end-to-end testing with Cypress</li>
-              <li>Introduction to Docker and containerization</li>
-              <li>CI/CD principles and pipelines</li>
-            </ul>
-          </div>
-          
-          {/* Month 9-10 */}
-          <div className="mb-6">
-            <h4 className="text-xl font-bold mb-2">Month 9-10: English Communication and Soft Skills</h4>
-            <ul className="list-disc list-inside">
-              <li>Business English and technical writing</li>
-              <li>Presentation skills and public speaking</li>
-              <li>Interview preparation and mock interviews</li>
-              <li>Soft skills workshops and team projects</li>
-            </ul>
-          </div>
-          
-          {/* Month 11-12 */}
-          <div className="mb-6">
-            <h4 className="text-xl font-bold mb-2">Month 11-12: Advanced Topics and Final Projects</h4>
-            <ul className="list-disc list-inside">
-              <li>Advanced React (Performance optimization, React Profiler)</li>
-              <li>Advanced TypeScript (Type manipulation, advanced types)</li>
-              <li>Advanced AWS (Scaling applications, CloudFormation)</li>
-              <li>Final project development and presentation</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
+      </section>
 
-export default Training;
+      {/* About Section */}
+      <section className="py-16 bg-blue-200">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-8">About the Program</h2>
+          <p className="text-lg mb-4">Our training program is designed to give students real-world experience by working on live projects. With expert guidance and minimal fees, we ensure you get the best start in your tech career.</p>
+          <div className="flex justify-center space-x-8 mt-8">
+            <div className="flex flex-col items-center">
+              <FontAwesomeIcon icon={faLaptopCode} size="3x" className="text-blue-600 mb-4" />
+              <p>Hands-on Experience</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <FontAwesomeIcon icon={faProjectDiagram} size="3x" className="text-blue-600 mb-4" />
+              <p>Real Projects</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <FontAwesomeIcon icon={faGraduationCap} size="3x" className="text-blue-600 mb-4" />
+              <p>Expert Guidance</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Curriculum Section */}
+      <section className="bg-gray-200 py-16">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-8">Curriculum Highlights</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <motion.div whileHover={{ scale: 1.05 }} className="p-6 bg-white rounded shadow">
+              <h3 className="text-xl font-bold mb-2">Module 1</h3>
+              <p>Introduction to Web Development</p>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.05 }} className="p-6 bg-white rounded shadow">
+              <h3 className="text-xl font-bold mb-2">Module 2</h3>
+              <p>Working with Databases</p>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.05 }} className="p-6 bg-white rounded shadow">
+              <h3 className="text-xl font-bold mb-2">Module 3</h3>
+              <p>Building Full-Stack Applications</p>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.05 }} className="p-6 bg-white rounded shadow">
+              <h3 className="text-xl font-bold mb-2">Module 4</h3>
+              <p>Real-World Projects</p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-16">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-8">Student Testimonials</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <motion.div whileHover={{ scale: 1.05 }} className="p-6 bg-white rounded shadow">
+              <p>"Vedic Technologies gave me the real-world experience I needed to land my first job in tech!"</p>
+              <p className="mt-4 font-bold">- Student Name</p>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.05 }} className="p-6 bg-white rounded shadow">
+              <p>"The hands-on projects and expert guidance were invaluable in my learning journey."</p>
+              <p className="mt-4 font-bold">- Student Name</p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="bg-blue-600 text-white py-16">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-8">Pricing and Enrollment</h2>
+          <p className="text-lg mb-8">Our training program is available for a minimal, which includes all modules and project work.</p>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            className="px-8 py-4 bg-white text-blue-600 rounded shadow"
+          >
+            Enroll Now
+          </motion.button>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-8">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <motion.div whileHover={{ scale: 1.05 }} className="p-6 bg-white rounded shadow">
+              <h3 className="text-xl font-bold mb-2">What is the duration of the program?</h3>
+              <p>The program lasts for 12 weeks, with weekly sessions and project work.</p>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.05 }} className="p-6 bg-white rounded shadow">
+              <h3 className="text-xl font-bold mb-2">Do I need prior experience?</h3>
+              <p>No prior experience is required. Our program is designed for beginners.</p>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.05 }} className="p-6 bg-white rounded shadow">
+              <h3 className="text-xl font-bold mb-2">What kind of support will I receive?</h3>
+              <p>You'll receive guidance from industry experts and have access to a community of fellow learners.</p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="bg-gray-200 py-16">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-8">Get in Touch</h2>
+          <p className="text-lg mb-4">Have more questions? Contact us at <a href="mailto:info@vedictechnologies.com" className="text-blue-600">info@vedictechnologies.com</a> or call us at (123) 456-7890.</p>
+        </div>
+      </section>
+
+      {/* Footer */}
+       <Footer/>
+    </div>
+  );
+};
+
+export default HomePage;
