@@ -16,7 +16,7 @@ const Navbar = () => {
             opacity: 1,
             y: 0,
             transition: {
-                duration: 0.9,
+                duration: 0.3,
                 ease: "easeInOut",
             },
         },
