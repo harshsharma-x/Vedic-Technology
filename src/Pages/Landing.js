@@ -5,6 +5,7 @@ import { IoRemoveOutline } from "react-icons/io5";
  import { FaArrowRight, FaWhatsapp } from "react-icons/fa";
  import { motion } from "framer-motion";
 import Services from './Services';
+import Logoimg from '../Pages/Logoimg';
  import WhyUS from './WhyUs';
  import Modal from 'react-modal';
  import Goal from './Goal';
@@ -37,6 +38,7 @@ const Homepeg = () => {
         </div>
 
  <Services />
+ <Logoimg/>
  <WhyUS />
      <Goal /> 
            <Vedic/>    
